@@ -1,0 +1,60 @@
+*{
+    font-family: 'Baloo 2', cursive;
+}
+
+#Headline{
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 3em;
+    color: rgb(100, 119, 215);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
+img{
+    height: 200px;
+    object-fit: contain;
+    transition: 0.2s;
+}
+
+img:hover{
+    scale: 1.1;
+}
+
+a:link{
+    color: orange;
+}
+
+a:focus{
+    color: blueviolet;
+}
+
+a:hover{
+    color: green;
+}
+
+.button-div{
+    text-align: center;
+}
+
+button{
+    padding: 8px;
+    margin: 30px; 
+    color: white;
+    background-color: blue; 
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+button:hover{
+background-color: darkblue;
+}
