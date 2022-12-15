@@ -1,17 +1,44 @@
 *{
     font-family: 'Oswald', sans-serif;
+    /* margin-top: 5px; */
 }
 
 #Headline{
     font-family: 'Secular One', sans-serif;
     font-size: 2em;
-    color: rgb(100, 119, 215);
+    color: rgb(100, 119, 215);  
+    margin-bottom: 5px;
+    height: 1em;
+    margin-top: 0px;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(237, 237, 237);
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+    left: 0px;
+    
+}
+
+.tags{
+    width:fit-content ;
+    display: inline-flex;
+    margin-left: 3em; 
+    margin-right: 3em; 
+    transition: 0.2s;
+}
+
+.tags:hover{
+    scale: 1.2;
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    max-width: fit-content;
   }
   
   td, th {
@@ -48,7 +75,8 @@ a:hover{
 
 button{
     padding: 8px;
-    margin: 30px; 
+    margin: 30px;
+    margin-bottom: 100px; 
     color: white;
     background-color: blue; 
     cursor: pointer;
@@ -57,4 +85,17 @@ button{
 
 button:hover{
 background-color: darkblue;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(205, 212, 226);
+    width: -webkit-fill-available; 
+    padding: 0px 10px;   
+    height:fit-content;
+    left: 0px;
+    display: inline-flex;
+    justify-content: space-between;
 }
