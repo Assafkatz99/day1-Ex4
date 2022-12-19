@@ -99,3 +99,7 @@ footer{
     display: inline-flex;
     justify-content: space-between;
 }
+
+div>h3 {
+    cursor: pointer;
+}
