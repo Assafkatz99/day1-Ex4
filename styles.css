@@ -1,9 +1,10 @@
 *{
+    transition: 0.12s;
     font-family: 'Oswald', sans-serif;
     /* margin-top: 5px; */
 }
 
-#Headline{
+.Headline{
     font-family: 'Secular One', sans-serif;
     font-size: 2em;
     color: rgb(100, 119, 215);  
@@ -27,7 +28,7 @@
     display: inline-flex;
     margin-left: 3em; 
     margin-right: 3em; 
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 
 .tags:hover{
@@ -50,7 +51,7 @@ table {
 img{
     height: 200px;
     object-fit: contain;
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 
 img:hover{
@@ -91,7 +92,7 @@ footer{
     text-align: center;
     position: fixed;
     bottom: 0px;
-    background-color: rgb(205, 212, 226);
+    background-color: rgb(237, 237, 237);
     width: -webkit-fill-available; 
     padding: 0px 10px;   
     height:fit-content;
@@ -102,4 +103,31 @@ footer{
 
 div>h3 {
     cursor: pointer;
+}
+
+#dark-mode-button{
+    cursor: pointer;
+    /* transition: 0.2s; */
+}
+
+#dark-mode-button:hover{
+    scale: 1.1;
+}
+
+
+.dark-mode {
+    background-color: #1E2019;
+    color: white;
+  }
+
+.dark-mode-header{
+    background-color: #394032;
+  }
+
+.dark-mode-Headline{
+    color: wheat;
+}
+
+.dark-mode-footer{
+    background-color: #394032;
 }
