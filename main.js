@@ -20,3 +20,24 @@ function darnkModeFunction() {
     document.querySelector('.footer').classList.add('dark-mode-footer');
   }
 }
+
+{
+  let fav_foods = ["Hummus", "Pasta", "Pizza", "Ice Cream"]
+  const food_list = document.getElementById("food_list")
+  food_list.innerHTML = "<ol>"
+  for (let i = 0; i < fav_foods.length; i++){
+    
+
+    if (fav_foods[i] === "Pasta"){
+      food_list.innerHTML += `<li><span style="font-family: 'Courier New', Courier, monospace;" >${fav_foods[i]}</span></li>`
+    }
+    else if (fav_foods[i] === "Pizza"){
+      food_list.innerHTML += `<li><strong>${fav_foods[i]}</strong></li>`
+    }
+    else {
+      food_list.innerHTML += `<li>${fav_foods[i]}</li>`
+    }
+
+  }
+  food_list.innerHTML += "</ol>"
+}
