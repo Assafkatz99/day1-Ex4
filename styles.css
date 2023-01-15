@@ -23,6 +23,7 @@ div {
     margin-top: 0px;
     width: 100%;
     left: 0px;   
+    z-index: 2;
 }
 #imgSection {
     display: flex;
@@ -41,7 +42,7 @@ section>div{
 }
 
 .tags:hover{
-    scale: 1.2;
+    scale: 1.1;
 }
 
 table {
@@ -58,10 +59,14 @@ table {
   }
 
 img{
-    height: 200px;
-    object-fit: contain;
+    /* max-height: 800px; */
+    /* object-fit: contain; */
     border-radius: 0.5em;
     /* transition: 0.2s; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    
 }
 
 img:hover{
@@ -140,4 +145,52 @@ div>h3 {
 
 .dark-mode-footer{
     background-color: #394032;
+}
+
+#imgSection{
+display: grid;
+gap:10px;
+grid-template-rows: repeat(3, calc(55vh / 3)) ;
+grid-template-columns: repeat(7, calc(90vw / 7)) ;
+
+}
+
+#imgNum1{
+    grid-area: 1/ 1 /span 2/span 4
+}
+#imgNum2{
+    grid-area: 1/ 5 /span 1/span 2
+}
+#imgNum3{
+    grid-area: 1/ 7 /span 1/span 1
+}
+#imgNum4{
+    grid-area: 3/ 1 /span 1/span 2
+}
+#imgNum5{
+    grid-area: 3/ 3 /span 1/span 2
+}
+#imgNum6{
+    grid-area: 2/ 5 /span 2/span 3
+}
+
+
+@media screen and (max-width:728px) {
+    #imgSection{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .header{
+        padding-bottom:10px ;
+    }
+    .header > h3{
+        display: none;
+    }
 }
